@@ -15,18 +15,27 @@ module.exports = {
         open: true,
         host: "localhost",
     },
-    module: {
-        rules: [
-            {
-                test: /\.(ts|tsx)$/,
-                exclude: /node_modules/,
-                use: 'babel-loader'
-            }
-        ]
-    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            },
+        ],
+    },
 };
