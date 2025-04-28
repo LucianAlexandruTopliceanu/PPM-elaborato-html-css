@@ -21,13 +21,72 @@ const Header: React.FC = () => {
                     </div>
                 </div>
                 <div className="right-section">
-                    <a href="#" className="login-link">
-                        <span className="login-icon"></span>
-                        <span className="login-text">Accedi</span>
+                    <a href="" className="login-container">
+                        <img alt="login icon" className="login-icon" src="https://placehold.co/24x24"/>
+                        <p className="login-text">Accedi</p>
                     </a>
-
-                    <a href="#" className="subscribe-button">Abbonati</a>
+                    <span className="language-switcher-separator"></span>
+                    <button className="subscribe-button">Abbonati</button>
                 </div>
+            </div>
+            <div className="header-nav-separator"></div>
+            <div className="nav-container">
+                <nav className="navbar">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a href="">
+                                <img alt="icona home" className="nav-icon-home" src="https://placehold.co/24x24"/>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Attualità
+                                <img alt="navbar attualità" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Economia
+                                <img alt="navbar economia" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Video
+                                <img alt="navbar video" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Dibattiti
+                                <img alt="navbar dibattiti" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Cultura
+                                <img alt="navbar cultura" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                La bocca del mondo
+                                <img alt="navbar la bocca del mondo" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                Servizi
+                                <img alt="navbar servizi" className="nav-icon-arrow" src="https://placehold.co/7x12" />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="">
+                                <img  alt="icona ricerca" className="nav-icon-search" src="https://placehold.co/24x24"/>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );
