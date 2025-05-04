@@ -41,7 +41,7 @@
 .live-section-item-content{
   color: #fff;
   font-size:1.3rem;
-  font-weight:500;
+  font-weight:600;
   line-height:1.25;
   max-width:100%;
   width:100%
@@ -49,7 +49,7 @@
 .live-section-header-time{
   color: #79c4df;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .03rem;
   line-height: 1.42;
   position: relative;
@@ -57,17 +57,19 @@
 .live-section-header-alarm{
   color: #fff;
   background-color: #be1514;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight:450;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
 }
 .live-section-header-live{
   color: #fcfcfd;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.68rem;
   margin-right: .8rem;
   letter-spacing: .05em;
   text-transform: uppercase;
+  font-weight:450;
 }
 .live-section-header-live-icon{
   background-color: #be1514;
@@ -102,4 +104,5 @@
   gap:0.5rem;
   color: #fff;
   text-decoration: underline;
+  font-weight:600;
 }

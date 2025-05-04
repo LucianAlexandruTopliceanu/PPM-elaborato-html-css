@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import LiveSection from './components/LiveSection';
-import "./style/baseStyle.scss"
-import "./style/headerStyle.scss"
-import "./style/liveSectionStyle.scss"
+import MainSection from './components/MainSection';
+import "./scss/style.scss"
+import "./scss/headerStyle.scss"
+import "./scss/liveSectionStyle.scss"
+import "./scss/mainSectionStyle.scss"
 
 const App: React.FC = () => {
     return (
         <div>
-            <Header />
-            <LiveSection />
+            <Header/>
+            <LiveSection/>
+            <MainSection/>
         </div>
     );
 };

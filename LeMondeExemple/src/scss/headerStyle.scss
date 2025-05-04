@@ -105,9 +105,10 @@
 .subscribe-button:hover{
   background-color:#eab002
 }
-.header-nav-separator{
-  height: 0.5rem;
-  background-color: #036487;
+.nav-container{
+  margin: auto;
+  border-top: 0.4rem solid #036487;
+  border-bottom: 0.1rem solid #036487;
 }
 .navbar-nav{
   display: flex;
@@ -118,7 +119,7 @@ ul{
   list-style-type:none;
 }
 .nav-icon-home{
-  padding-left: 11rem;
+
 }
 .nav-icon-search{
   padding-right: 11rem;
@@ -130,6 +131,7 @@ ul{
   letter-spacing: .05rem;
   position: relative;
   text-decoration: none;
+  padding: 1.6rem;
 }
 .nav-item a:hover{
   color: #026b9c;

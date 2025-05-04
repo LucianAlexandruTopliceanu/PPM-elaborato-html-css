@@ -29,7 +29,6 @@ const Header: React.FC = () => {
                     <button className="subscribe-button">Abbonati</button>
                 </div>
             </div>
-            <div className="header-nav-separator"></div>
             <div className="nav-container">
                 <nav className="navbar">
                     <ul className="navbar-nav">

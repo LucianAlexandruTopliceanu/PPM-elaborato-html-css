@@ -1,3 +1,4 @@
+
 body, h1, h3, p, ul {
   font-weight: inherit;
   margin: 0;
@@ -43,8 +44,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
-  body {
-    background-color: #f5f6f8;
-  }
+body {
+  background-color: #f5f6f8;
 }
