@@ -2,30 +2,30 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <div className="MainHeader">
-            <div className="language-switcher">
-                <a href="" className="language-switcher-lan language-switcher-lan-active">Italiano</a>
-                <span className="language-switcher-separator"></span>
-                <a href="" className="language-switcher-lan">English</a>
+        <div className="header">
+            <div className="language-container">
+                <a href="" className="language active">Italiano</a>
+                <span className="separator"></span>
+                <a href="" className="language">English</a>
             </div>
             <div className="header-container">
-                <div className="left-section">
-                    <a href="" className="paper-link">
-                        <img className="paper-link-img" alt="giornale" src="https://placehold.co/80x54"/>
-                        <p className="paper-link-text">Leggi<br/>giornale</p>
+                <div className="left">
+                    <a href="" className="link">
+                        <img alt="giornale" src="https://placehold.co/80x54"/>
+                        <p className="text">Leggi<br/>giornale</p>
                     </a>
                 </div>
-                <div className="center-section">
-                    <div className="center-logo">
-                        <img className="center-section-img" alt="logo" src="https://placehold.co/290x60"/>
+                <div className="center">
+                    <div className="logo-container">
+                        <img alt="logo" src="https://placehold.co/290x60"/>
                     </div>
                 </div>
-                <div className="right-section">
+                <div className="right">
                     <a href="" className="login-container">
-                        <img alt="login icon" className="login-icon" src="https://placehold.co/24x24"/>
-                        <p className="login-text">Accedi</p>
+                        <img alt="login icon" className="icon" src="https://placehold.co/24x24"/>
+                        <p className="text">Accedi</p>
                     </a>
-                    <span className="language-switcher-separator"></span>
+                    <span className="separator"></span>
                     <button className="subscribe-button">Abbonati</button>
                 </div>
             </div>

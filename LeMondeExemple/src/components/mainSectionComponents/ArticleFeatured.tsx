@@ -13,7 +13,7 @@ const ArticleFeatured=()=>{
                     <p className="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra risus vitae leo aliquam bibendum. </p>
                 </div>
-                <p className="footer">Lorem ipsum</p>
+                <p className="article-footer">Lorem ipsum</p>
             </a>
         </div>
     );

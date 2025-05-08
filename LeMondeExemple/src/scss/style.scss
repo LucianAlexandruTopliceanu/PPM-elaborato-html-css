@@ -15,18 +15,11 @@ img {
   white-space: nowrap;
 }
 
-img:not([src]) {
-  visibility: hidden;
-}
 html {
   box-sizing:border-box;
   color:#383f4e;
   font-size:62.5%;
   -webkit-font-smoothing:antialiased
-}
-html,
-html.fonts-loaded html {
-  font-family:Helvetica Neue,Helvetica,Arial,Roboto,sans-serif
 }
 body {
   --lmd-color-inverse-bg-white: hsla(0, 0%, 100%, .2);

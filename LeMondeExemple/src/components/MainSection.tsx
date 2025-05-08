@@ -38,19 +38,19 @@ const MainSection : React.FC = () =>{
                         <div className="col-lg-12"><Podcast/></div>
                     </div>
                     <div className=" row separator"></div>
-                    <div className="row">
+                    <div className="row separator">
                         <div className="col-lg-6"><BasicArticleWide/></div>
                         <div className="col-lg-6"><BasicArticleWide/></div>
                     </div>
-                    <div className="row">
+                    <div className="row separator">
                         <div className="col-lg-6"><BasicArticleWide/></div>
                         <div className="col-lg-6"><BasicArticleWide/></div>
                     </div>
-                    <div className="row">
+                    <div className="row separator">
                         <div className="col-lg-6"><BasicArticleText/></div>
                         <div className="col-lg-6"><BasicArticleText/></div>
                     </div>
-                    <div className="row">
+                    <div className="row separator">
                         <div className="col-lg-6"><BasicArticleText/></div>
                         <div className="col-lg-6"><BasicArticleText/></div>
                     </div>

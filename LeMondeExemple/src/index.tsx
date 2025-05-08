@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import LiveSection from './components/LiveSection';
 import MainSection from './components/MainSection';
-import Footer from "./components/mainSectionComponents/Footer";
+import Footer from "./components/Footer";
 import "./scss/style.scss"
 import "./scss/headerStyle.scss"
 import "./scss/liveSectionStyle.scss"
