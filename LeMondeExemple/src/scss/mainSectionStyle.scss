@@ -154,14 +154,19 @@
 }
 .mainSection{
   padding: 2.4rem 1.6rem 4rem;
-  inset: 0;
-  max-width: 65%;
   margin: auto;
+  max-width: 100rem;
   background-color: #fff;
   .separator{
     border-bottom: 0.2rem solid #dadce0;
     margin-top: 2.4rem;
     padding-bottom: 2.4rem;
+  }
+}
+@media screen and (min-width: 768px){
+  .mainSection{
+    margin: 0 auto;
+    max-width: 66.4rem;
   }
 }
 .basicArticle{
