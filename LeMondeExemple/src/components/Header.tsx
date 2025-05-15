@@ -10,6 +10,9 @@ const Header: React.FC = () => {
             </div>
             <div className="header-container">
                 <div className="left">
+                    <button className="burger-mobile" role="Navigation">
+                        <img alt="burger menu" src="https://placehold.co/24x24" />
+                    </button>
                     <a href="" className="link">
                         <img alt="giornale" src="https://placehold.co/80x54"/>
                         <p className="text">Leggi<br/>giornale</p>
@@ -30,7 +33,7 @@ const Header: React.FC = () => {
                 </div>
             </div>
             <div className="nav-container">
-                <nav className="navbar">
+                <nav className="nav-bar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <a href="">
