@@ -5,10 +5,6 @@ import LiveSection from './components/LiveSection';
 import MainSection from './components/MainSection';
 import Footer from "./components/Footer";
 import "./scss/style.scss"
-import "./scss/headerStyle.scss"
-import "./scss/liveSectionStyle.scss"
-import "./scss/mainSectionStyle.scss"
-import "./scss/footerStyle.scss"
 
 const App: React.FC = () => {
     return (

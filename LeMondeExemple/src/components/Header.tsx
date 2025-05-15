@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                         </li>
                         <li className="nav-item">
                             <a href="">
-                                La bocca del mondo
+                                Mondo
                                 <img alt="navbar la bocca del mondo" className="nav-icon-arrow" src="https://placehold.co/7x12" />
                             </a>
                         </li>

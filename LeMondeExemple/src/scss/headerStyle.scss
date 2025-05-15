@@ -1,231 +1,262 @@
-.header{
+.header {
   background-color: #ffffff;
-}
-.header-container{
-  height: 9.6rem;
-  margin: 0 auto;
-  align-items: center;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  max-width: 115.2rem;
-  position: relative;
-  .left{
-    align-self: flex-end;
-    .link{
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      .text{
-        height: 5.4rem;
-        line-height: 1.6rem;
-        padding-left: 1rem;
-        padding-top: 1rem;
-        align-content: center;
-        color: #717b8e;
-        font-size:1.3rem;
-      }
-      img{
 
-      }
-    }
-    .link:hover .text{
-      text-decoration:underline;
-      text-decoration-thickness:.05em;
-      text-underline-offset:.2em
-    }
-    .burger-mobile{
-      align-content: center;
-      background: transparent;
-      border: 0;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      width: 5.6rem;
-    }
-  }
-  .center{
+  &-container {
+    height: 9.6rem;
     margin: 0 auto;
-    align-self: flex-start;
+    align-items: center;
+    background-color: #fff;
     display: flex;
-    padding-bottom: 4rem;
-    .logo-container{
-      align-self: center;
-    }
-  }
-  .right{
-    align-self: flex-end;
-    display: flex;
-    margin-bottom: 2.8rem;
-    .login-container{
-      align-self: center;
+    flex-direction: row;
+    max-width: 115.2rem;
+    position: relative;
+
+    .left, .center, .right {
       display: flex;
-      padding: .8rem 0;
-      text-decoration: none;
-      align-items: center;
-      font-size: 1.2rem;
-      justify-content: flex-end;
-      .icon{
-        align-content: center;
-        align-self: center;
-        height: 2.4rem;
-        width: 2.4rem;
-      }
-      .text{
-        font-weight: 600;
-        margin-left: .8rem;
-        align-content: center;
-        font-size: 1.4rem;
-        color:#2a303b;
-      }
-    }
-    .login-container:hover .text{
-      color:#026b9c;
-    }
-    .separator{
-      background-color: #e2e4e9;
-      content: " ";
-      display: block;
-      height: auto;
-      width: .1rem;
-      margin: 0 1.6rem;
-    }
-    .subscribe-button{
-      padding: 0 1.6rem;
-      align-self: center;
-      background-color: #ffc700;
-      color: #2a303b;
-      font-size: 1.2rem;
-      border: 0;
-      border-radius: .3rem;
-      cursor: pointer;
-      height: 3rem;
-      line-height: 1;
-      font-weight: 600;
-      max-width: 100%;
-    }
-    .subscribe-button:hover{
-      background-color:#eab002
     }
 
+    .left {
+      align-self: flex-end;
+
+      .link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        .text {
+          height: 5.4rem;
+          line-height: 1.6rem;
+          padding-left: 1rem;
+          padding-top: 1rem;
+          align-content: center;
+          color: #717b8e;
+          font-size: 1.3rem;
+        }
+
+        &:hover .text {
+          text-decoration: underline;
+          text-decoration-thickness: .05em;
+          text-underline-offset: .2em;
+        }
+      }
+
+      .burger-mobile {
+        align-content: center;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        width: 5.6rem;
+      }
+    }
+
+    .center {
+      margin: 0 auto;
+      align-self: flex-start;
+      padding-bottom: 4rem;
+
+      .logo-container {
+        align-self: center;
+      }
+    }
+
+    .right {
+      align-self: flex-end;
+      margin-bottom: 2.8rem;
+      align-items: center;
+
+      .login-container {
+        display: flex;
+        padding: .8rem 0;
+        text-decoration: none;
+        align-items: center;
+        font-size: 1.2rem;
+        justify-content: flex-end;
+
+        .icon {
+          align-content: center;
+          align-self: center;
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+
+        .text {
+          font-weight: 600;
+          margin-left: .8rem;
+          align-content: center;
+          font-size: 1.4rem;
+          color: #2a303b;
+        }
+
+        &:hover .text {
+          color: #026b9c;
+        }
+      }
+
+      .separator {
+        background-color: #e2e4e9;
+        content: " ";
+        display: block;
+        height: auto;
+        width: .1rem;
+        margin: 0 1.6rem;
+      }
+
+      .subscribe-button {
+        padding: 0 1.6rem;
+        align-self: center;
+        background-color: #ffc700;
+        color: #2a303b;
+        font-size: 1.2rem;
+        border: 0;
+        border-radius: .3rem;
+        cursor: pointer;
+        height: 3rem;
+        line-height: 1;
+        font-weight: 600;
+        max-width: 100%;
+
+        &:hover {
+          background-color: #eab002;
+        }
+      }
+    }
   }
 }
-.nav-container{
+
+.nav-container {
   margin: auto;
   border-top: 0.4rem solid #036487;
   border-bottom: 0.1rem solid #eff0f3;
 }
-.navbar-nav{
+
+.navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-shrink: 0;
 }
-ul{
+
+ul {
   max-width: 115.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style-type:none;
-  margin:auto;
-  li{
+  list-style-type: none;
+  margin: auto;
+
+  li {
     display: flex;
   }
 }
-.nav-item a{
+
+.nav-item a {
+  display: flex;
+  flex-direction: row;
   color: #2a303b;
   letter-spacing: .05rem;
   position: relative;
   text-decoration: none;
   padding: 1.6rem;
+
+  &:hover {
+    color: #026b9c;
+  }
 }
-.nav-item a:hover{
-  color: #026b9c;
-}
-.language-container{
+
+.language-container {
   align-items: center;
   display: flex;
   height: 4.6rem;
   justify-content: center;
-  .language{
-    color:#bdc1c8;
-    font-size:1.2rem;
-    line-height:1;
-    text-transform:uppercase;
+
+  .language {
+    color: #bdc1c8;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+      color: #026b9c;
+    }
+
+    &.active, &.active:hover {
+      color: #2a303b;
+      cursor: default;
+    }
   }
-  .language:hover{
-    color:#026b9c
-  }
-  .active,.active:hover{
-    color:#2a303b;
-    cursor:default
-  }
-  .separator{
+
+  .separator {
     background-color: #d5d8dc;
     height: 35%;
     width: .1rem;
     margin: 0 .8rem;
   }
 }
-@media screen and (min-width: 1024px){
-  .header-container{
-    .left{
-      align-self: flex-end;
-      .burger-mobile{
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    .left {
+      .burger-mobile {
         display: none;
       }
-    }
-    .center{
-      align-self: flex-start;
-      padding: 0;
     }
 
+    .center {
+      padding: 0;
+    }
   }
 }
-@media screen and (max-width: 1024px){
-  .language-container{
+
+@media screen and (max-width: 1024px) {
+  .language-container {
     display: none;
   }
-  .header-container{
+
+  .header-container {
     .left {
       align-self: flex-start;
-      .link{
+
+      .link {
         display: none;
       }
     }
+
     .center {
       margin: 0;
       padding-bottom: 0;
       height: 3rem;
       width: 13.8rem;
       align-items: center;
-      display: flex;
       justify-content: center;
     }
+
     .right {
       margin: 0 0 0 auto;
       align-self: auto;
-      .subscribe-button{
-        padding:.7rem 1.6rem;
+
+      .subscribe-button {
+        padding: .7rem 1.6rem;
       }
     }
   }
-  .nav-container{
-    margin: auto;
+
+  .nav-container {
     overflow-x: auto;
     overflow-y: hidden;
     position: static;
     width: 100%;
     border-top: 0.1rem solid #eff0f3;
   }
-  .navbar{
+
+  .navbar {
     padding: 0;
     white-space: normal;
-    .nav-item{
-      a{
-        height: 100%;
-      }
+
+    .nav-item a {
+      height: 100%;
     }
   }
 }

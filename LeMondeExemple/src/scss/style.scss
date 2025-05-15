@@ -1,42 +1,107 @@
+// Stili per i componenti esistenti (basati sui file precedenti)
+@use 'headerStyle';
+@use 'liveSectionStyle';
+@use 'mainSectionStyle';
+@use 'footerStyle';
 
-body, h1, h3, p, ul {
-  font-weight: inherit;
+// Variabili globali
+:root {
+  // Colori
+  --color-primary: #2a303b;
+  --color-secondary: #717b8e;
+  --color-accent: #be1514;
+  --color-border: #dadce0;
+  --color-highlight: #ffc700;
+  --color-text: #383f4e;
+  --color-bg: #f5f6f8;
+  --color-white: #ffffff;
+  --color-light-gray: #e8eaee;
+  --color-dark-gray: #a4a9b4;
+
+  // Dimensioni
+  --base-font-size: 1.6rem;
+  --heading-font-size: 1.4rem;
+  --small-font-size: 1.3rem;
+  --border-radius: 0.3rem;
+}
+
+// Reset e stili base
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-*, :after, :before {
-  box-sizing: inherit;
-}
-img {
-  height: auto;
-  max-width: 100%;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
 
 html {
-  box-sizing:border-box;
-  color:#383f4e;
-  font-size:62.5%;
-  -webkit-font-smoothing:antialiased
+  font-size: 62.5%; // 1rem = 10px
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
+
 body {
-  --lmd-color-inverse-bg-white: hsla(0, 0%, 100%, .2);
-  --lmd-color-inverse-bg-white-hover: hsla(220, 3%, 53%, .102);
-  --lmd-color-inverse-bg-light: #565e70;
-  --lmd-color-inverse-bg-light-hover: #666e80;
-  --lmd-color-inverse-bg-medium: #464f5f;
-  --lmd-color-inverse-bg-medium-hover: #464f5f;
-  --lmd-color-inverse-bg-dark: #2a303c;
-  --lmd-color-inverse-bg-dark-hover: #464f5f;
-  --lmd-color-inverse-bg-cta: #fff;
-  --lmd-color-storm-content-dark: #2a303c;
-  --lmd-color-storm-content-dark-hover: #464f5f;
-  font-size: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: var(--base-font-size);
+  color: var(--color-text);
+  background-color: var(--color-bg);
   overflow-x: hidden;
 }
 
-body {
-  background-color: #f5f6f8;
+// Elementi base
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.25;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Utility classes
+.container {
+  width: 100%;
+  max-width: 115.2rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+// Media queries responsive
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
 }
