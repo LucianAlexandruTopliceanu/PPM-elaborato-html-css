@@ -333,7 +333,7 @@ $color-highlight: #ffc700;
 }
 
 // Media queries
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .mainSection {
     margin: 0 auto;
     max-width: 100rem;
@@ -343,11 +343,9 @@ $color-highlight: #ffc700;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .mainSection {
     margin: 0 auto;
     max-width: 66.4rem;
-    display: flex;
-    flex-direction: column;
   }
 }

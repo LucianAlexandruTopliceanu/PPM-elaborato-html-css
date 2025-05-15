@@ -96,12 +96,15 @@ img {
 
 
 // Media queries responsive
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 56.25%; // 1rem = 9px
+@media screen and (max-width: 1200px) {
+  body{
+    background-color: var(--color-white);
   }
-
+  html {
+    font-size: 56.25%;
+  }
   .container {
     padding: 0 1.2rem;
   }
+
 }

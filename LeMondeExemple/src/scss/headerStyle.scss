@@ -196,8 +196,10 @@ ul {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .header-container {
+    margin: 0;
+    max-width: none;
     .left {
       .burger-mobile {
         display: none;
@@ -210,21 +212,23 @@ ul {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .language-container {
     display: none;
   }
 
   .header-container {
+    height: 6rem;
+    padding: 1.5rem 1.2rem 1.5rem 0;
     .left {
-      align-self: flex-start;
-
+      align-self: center;
       .link {
         display: none;
       }
     }
 
     .center {
+      align-self: center;
       margin: 0;
       padding-bottom: 0;
       height: 3rem;
@@ -235,8 +239,10 @@ ul {
 
     .right {
       margin: 0 0 0 auto;
-      align-self: auto;
-
+      align-self: center;
+      .text{
+        margin: 0;
+      }
       .subscribe-button {
         padding: .7rem 1.6rem;
       }

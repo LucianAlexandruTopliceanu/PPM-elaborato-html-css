@@ -5,7 +5,7 @@ const Footer = () => {
             <section className="main-section">
                 <section className="top">
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className="col-xl-8">
                             <div className="category">
                                 <section>
                                     <h3>Lorem ipsum dolor</h3>
@@ -82,7 +82,7 @@ const Footer = () => {
                                 </section>
                             </div>
                         </div>
-                        <div className="col-lg-4 stuf">
+                        <div className="col-xl-4 stuf">
                             <section className="stuff-section">
                                 <div className="row">
                                     <section>
